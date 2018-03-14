@@ -328,7 +328,7 @@ void CVX_Voxel::floorForce(float dt, Vec3D<double>* pTotalForce, float CurPenetr
 float CVX_Voxel::floorPenetration() const {
 
 	float sumPenetration;
-	int countCorner;
+	int countCorner = 0;
 
 	Vec3D<float> floorA = Vec3D<float>(1.0f, 0.0f, 0.0f);
 	Vec3D<float> floorB = Vec3D<float>(0.0f, 0.0f, 1.0f);
